@@ -19,16 +19,16 @@ export default function SilkSlider() {
                 <Slider {...settings}>
 
                     <div>
-                        <img className="w-full" src={HeroImg} alt="" />
+                        <img className="w-full rounded-2xl" src={HeroImg} alt="" />
                     </div>
                     <div>
-                        <img className="w-full" src={HeroImg} alt="" />
+                        <img className="w-full rounded-2xl" src={HeroImg} alt="" />
                     </div>
                     <div>
-                        <img className="w-full" src={HeroImg} alt="" />
+                        <img className="w-full rounded-2xl" src={HeroImg} alt="" />
                     </div>
                     <div>
-                        <img className="w-full" src={HeroImg} alt="" />
+                        <img className="w-full rounded-2xl" src={HeroImg} alt="" />
                     </div>
 
                 </Slider>
