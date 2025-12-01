@@ -27,28 +27,37 @@ export default function Faq() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   return (
-    <section className="max-w-3xl mx-auto bg-white rounded-xl border border-gray-200 divide-y">
-      {faqs.map((item, index) => (
-        <div key={index} className="p-5">
-          <button
-            onClick={() => setActiveIndex(activeIndex === index ? null : index)}
-            className="w-full flex items-center justify-between text-left transition-all duration-500 ease-in-out"
-            aria-expanded={activeIndex === index}
-            aria-controls={`faq-${index}`}
-          >
-            <span className="text-gray-900 font-medium text-base">{item.q}</span>
-            <span className="ml-4 flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 text-gray-700 ">
-              {activeIndex === index ? '−' : '+'}
-            </span>
-          </button>
+    <section className='pb-30'>
+      <div className="container pb-18.75">
+        <h2 className='text-[30px] font-semibold text-center'>Frequently Asked Questions</h2>
+        <p className='text-center'>Interdum et malesuada fames</p>
+      </div>
 
-          {activeIndex === index && (
-            <div id={`faq-${index}`} className="mt-3 text-gray-500 text-sm leading-relaxed ">
-              {item.a}
-            </div>
-          )}
-        </div>
-      ))}
+      <div className="max-w-3xl mx-auto bg-white rounded-xl border border-gray-200 divide-y">
+
+        {faqs.map((item, index) => (
+          <div key={index} className="p-5">
+            <button
+              onClick={() => setActiveIndex(activeIndex === index ? null : index)}
+              className="w-full flex items-center justify-between text-left transition-all duration-500 ease-in-out"
+              aria-expanded={activeIndex === index}
+              aria-controls={`faq-${index}`}
+            >
+              <span className="text-gray-900 font-medium text-base">{item.q}</span>
+              <span className="ml-4 flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 text-gray-700 ">
+                {activeIndex === index ? '−' : '+'}
+              </span>
+            </button>
+
+            {activeIndex === index && (
+              <div id={`faq-${index}`} className="mt-3 text-gray-500 text-sm leading-relaxed ">
+                {item.a}
+              </div>
+            )}
+            
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

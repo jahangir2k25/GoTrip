@@ -2,10 +2,13 @@ import React from 'react';
 import Icon1 from '../assets/icons/certificate.png';
 import Icon2 from '../assets/icons/service.png';
 import Icon3 from '../assets/icons/calendar.png';
-import Card from './Card';
+import TopDestination from './TopDestination';
+import CarListing from './CarListing';
+
 
 
 const WhyChoose = () => {
+    
     const features = [
         {
             iconUrl: Icon1,
@@ -60,29 +63,15 @@ const WhyChoose = () => {
                     }
 
                 </div>
+                
                 {/* popular car hire */}
-                <div className="popular-car text-center mt-30">
-                    <h2 className='text-[30px] font-semibold'>Popular Car Hire</h2>
-                    <p className='pt-1.5 pb-10'>Interdum et malesuada fames ac ante ipsum</p>
-                    <div className="flex gap-7.5 justify-center ">
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                    </div>
-                </div>
+                <CarListing />
+
                 {/* Top Destinations in UK */}
-                <div className="popular-car text-center mt-30">
-                    <h2 className='text-[30px] font-semibold'>Top Destinations in UK</h2>
-                    <p className='pt-1.5 pb-10'>These popular destinations have a lot to offer</p>
-                    <div className="flex gap-7.5 justify-center ">
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                    </div>
-                </div>
+                <TopDestination />
+
             </div>
+
         </section>
     );
 };

@@ -2,10 +2,10 @@ import React from 'react'
 
 const Destination = () => {
   return (
-    <div>
-      
+    <div className='container'>
+      destination
     </div>
   )
 }
 
-export default Destination
+export default Destination;
