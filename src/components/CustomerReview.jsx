@@ -6,9 +6,8 @@ import Slider from "react-slick";
 import amazon from '../assets/amazon.png';
 import dropcam from '../assets/dropcam.png';
 import logitech from '../assets/logitech.png';
-import spotify from '../assets/spotify.png';
+import spotify from '../assets/Spotify.png';
 import stars from '../assets/stars.png';
-
 
 
 const sampleReviews = [
