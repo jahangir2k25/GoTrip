@@ -29,8 +29,8 @@ const WhyChoose = () => {
     ];
 
     return (
-        <section className="pb-16 pt-140 bg-white">
-            <div className="container mx-auto px-4">
+        <section className="pb-16 pt-90 bg-white">
+            <div className="container">
 
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold text-gray-800 mb-2">Why Choose Us</h2>

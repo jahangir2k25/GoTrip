@@ -5,6 +5,7 @@ import DownloadApp from '../components/DownloadApp';
 import Faq from '../components/Faq';
 import CustomerReview from '../components/CustomerReview';
 import CarHire from '../components/CarHire';
+import NextTrip from '../components/NextTrip';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <WhyChoose />
             <CustomerReview />
             <CarHire />
+            <NextTrip />
             <DownloadApp />
             <Faq />
         </>

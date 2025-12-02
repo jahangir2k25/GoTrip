@@ -98,13 +98,13 @@ const Navbar = () => {
                     </button>
 
                     {/* Sign In */}
-                    <button className="border border-primary px-5 py-2 rounded-sm text-primary text-sm font-medium hover:bg-primary hover:text-white transition">
+                    <button to='/Login' className="border border-primary px-5 py-2 rounded-sm text-primary text-sm font-medium hover:bg-primary hover:text-white transition cursor-pointer">
                         Sign In / Register
                     </button>
                 </div>
 
                 {/* mobile bar*/}
-                <div className="lg:hidden">
+                <div className="lg:hidden ">
                     <button onClick={() => setisopen(!isOpen)} className='text-2xl text-gray-100 cursor-pointer'> {isOpen ? <FaWindowClose /> : <FaBarsStaggered />}</button>
                 </div>
 

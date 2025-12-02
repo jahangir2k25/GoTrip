@@ -10,6 +10,7 @@ import Destination from './pages/Destination';
 import Blog from './pages/Blog';
 import Pages from './pages/Pages';
 import Contact from './pages/Contact';
+import Login from './login/Login';
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: "blog", Component: Blog },
       { path: "pages", Component: Pages },
       { path: "contact", Component: Contact },
+      { path: "login", Component: Login },
     ],
   },
 ]);
