@@ -16,7 +16,7 @@ const CarHire = () => {
                     </div>
 
                     <div className='w-[520px] h-[420px] grid grid-cols-2 shadow items-center text-center'>
-        
+
                         <div className='border-r border-b border-[#3e3f401e] text-center '>
                             <h2 className='text-[40px] font-semibold'>4,958</h2>
                             <p className='text-[#697488]'>Destinations</p>
@@ -35,6 +35,7 @@ const CarHire = () => {
                         </div>
 
                     </div>
+
 
                 </div>
 
