@@ -6,7 +6,7 @@ import { Link } from "react-router";
 
 const Login = () => {
     return (
-        <div className="py-15 lg:py-30 bg-slate-800">
+        <div className="py-15 lg:py-30 bg-slate-400">
             <div className="container pt-10">
                 <div className="bg-white w-full max-w-2xl p-8 lg:p-12 rounded-sm shadow-md mx-auto">
 

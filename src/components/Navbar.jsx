@@ -2,7 +2,7 @@ import { CiSearch } from "react-icons/ci";
 import Logo from '../assets/logo.png';
 import { useEffect, useState } from "react";
 import { NavLink, Link } from 'react-router';
-import { FaWindowClose } from 'react-icons/fa'
+import { FaWindowClose } from 'react-icons/fa';
 import { FaBarsStaggered } from 'react-icons/fa6';
 
 
@@ -93,13 +93,15 @@ const Navbar = () => {
                     <CiSearch className="w-6.25 h-6.25 cursor-pointer text-primary" />
 
                     {/* Become Expert */}
-                    <button className="bg-primary border border-primary text-white hover:text-primary px-5 py-2 rounded-sm text-sm font-medium hover:bg-transparent transition">
+                    <button className="bg-primary border border-primary text-white hover:text-primary px-5 py-2 rounded-sm text-sm font-medium hover:bg-transparent transition cursor-pointer">
                         Become An Expert
                     </button>
 
                     {/* Sign In */}
-                    <button to='/Login' className="border border-primary px-5 py-2 rounded-sm text-primary text-sm font-medium hover:bg-primary hover:text-white transition cursor-pointer">
-                        Sign In / Register
+                    <button className="border border-primary px-5 py-2 rounded-sm text-primary text-sm font-medium hover:bg-primary hover:text-white transition cursor-pointer">
+                        <Link to='/Login'>
+                            Sign In / Register
+                        </Link>
                     </button>
                 </div>
 
